@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1 class="text-center"> Bienvenue sur mon blog </h1>
+
+<div class="container d-flex flex-column align-items-center mt-5">
+<p class='text-center'>Venez découvrir les différentes catégories de posts :</p>
+<%= link_to 'Catégories', categories_path, class:'btn btn-dark mb-4' %>
+
+<p class='text-center'>Venez découvrir tous les posts</p>
+
+<%= link_to "Posts", posts_path, class:"btn btn-dark"%>
+</div>

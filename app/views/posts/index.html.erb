@@ -1,0 +1,15 @@
+<h1 class="text-center my-3">Posts</h1>
+
+<h3 class='text-center my-3'>Voici tous les posts mis en ligne :</h3>
+<div class="container d-flex justify-content-center">
+    <div class="posts my-2">
+    <% @posts.each do |post| %>
+            <h4>Titre: <%= post.title %></h4>
+            <h5>Catégorie : <%= post.category.name %></h5>
+            <p><%= post.content %></p>
+    <% end %>
+    <div class="d-flex justify-content-center">
+        <%= link_to 'Accueil', root_path, class:'text-center btn btn-dark' %>
+    </div>  
+    </div>
+</div>

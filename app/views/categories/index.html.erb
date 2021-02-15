@@ -1,0 +1,13 @@
+<h1 class='text-center'>Catégories</h1>
+<h3 class='text-center'> Voici toutes les catégories de posts présentes :</h3>
+<div class="container d-flex justify-content-center">
+<div class="categories my-2">
+<% @categories.each do |category|%>
+    <h4 class="text-center my-2"><%= category.name %></h4>
+    <h5 class="text-center my-2">Nombre de posts: <%= category.posts.count %></h5>
+<% end %>
+    <div class="d-flex justify-content-center">
+    <%= link_to 'Accueil', root_path, class:'text-center btn btn-dark' %>
+    </div>
+</div>
+</div>
