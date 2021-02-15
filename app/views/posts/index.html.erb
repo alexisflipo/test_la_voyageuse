@@ -4,9 +4,9 @@
 <div class="container d-flex justify-content-center">
     <div class="posts my-2">
     <% @posts.each do |post| %>
-            <h4>Titre: <%= post.title %></h4>
-            <h5>Catégorie : <%= post.category.name %></h5>
-            <p><%= post.content %></p>
+            <h3 class="my-4">Titre: <%= post.title %></h3>
+            <h4 class="my-4">Catégorie : <%= post.category.name %></h4>
+            <p class="my-4"><%= post.content %></p>
     <% end %>
     <div class="d-flex justify-content-center">
         <%= link_to 'Accueil', root_path, class:'text-center btn btn-dark' %>

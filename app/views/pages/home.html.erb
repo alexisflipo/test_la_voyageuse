@@ -1,12 +1,12 @@
 <h1 class="text-center"> POST BLOG </h1>
 
 <div class="container d-flex flex-column align-items-center mt-5">
-<p class='text-center mt-5'>Venez découvrir les différentes catégories de posts :</p>
-<%= link_to 'Catégories', categories_path, class:'btn btn-dark mb-5' %>
+<h3 class='text-center mt-5'>Venez découvrir les différentes catégories de posts :</h3>
+<%= link_to 'Catégories', categories_path, class:'btn btn-dark my-5' %>
 
-<p class='text-center mt-5'>Venez découvrir tous les posts mis en ligne</p>
+<h3 class='text-center mt-5'>Venez découvrir tous les posts mis en ligne</h3>
 
-<%= link_to "Posts", posts_path, class:"btn btn-dark"%>
+<%= link_to "Posts", posts_path, class:"btn btn-dark my-5"%>
 <div class="email_form">
 <p class="mt-5"> Restez au courant des derniers posts en ajoutant votre adresse email à la newsletter </p>
 <%= simple_form_for @contact do |form| %>
