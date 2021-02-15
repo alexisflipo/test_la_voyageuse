@@ -227,6 +227,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable
   autoprefixer-rails
   bootsnap (>= 1.4.2)
   byebug
